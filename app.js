@@ -332,10 +332,10 @@
         value:function(){
           this.state.power&&("Heater Kit" === this.state.currentPadBankId ? this.setState({
             currentPadBank:d,
-            display:"Smooth Piano Kit",
+            display:"Piano Styles",
             currentPadBankId:"Smooth Piano Kit"}) : this.setState({
               currentPadBank:l,
-              display:"Heater Kit",
+              display:"Heater Styles",
               currentPadBankId:"Heater Kit"}))
         }
       },
@@ -377,8 +377,8 @@
               power:this.state.power,
               updateDisplay:this.displayClipName}),
             React.createElement("div",{className:"logo"},
-              React.createElement("div",{className:"inner-logo "},"FCC"+String.fromCharCode(160)),
-              React.createElement("i",{className:"inner-logo fa fa-free-code-camp"})),
+              React.createElement("div",{className:"inner-logo "},"Daniel Doan"+String.fromCharCode(160)),
+              React.createElement("i",{className:"inner-logo fa fa-check-square-o"})),
             React.createElement("div",{className:"controls-container"},
               React.createElement("div",{className:"control"},
                 React.createElement("p",null,"Power"),
@@ -402,6 +402,6 @@
         }
       }]),n
   }();
-  ReactDOM.render(React.createElement(h,null),document.getElementById("root"))
+  ReactDOM.render(React.createElement(h,null),document.getElementById("app"))
 }();
 
